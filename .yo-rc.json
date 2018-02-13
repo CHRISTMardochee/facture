@@ -1,0 +1,54 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.kgentreprises.hospital",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "4.14.0",
+    "baseName": "hospital",
+    "packageName": "com.kgentreprises.hospital",
+    "packageFolder": "com/kgentreprises/hospital",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "bdd21edd1dd149e49a432be81227a3a8a4cf0220",
+    "clientFramework": "angular1",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr",
+      "ar-ly",
+      "zh-cn",
+      "nl",
+      "en",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt-br",
+      "ru",
+      "es",
+      "tr"
+    ]
+  }
+}
