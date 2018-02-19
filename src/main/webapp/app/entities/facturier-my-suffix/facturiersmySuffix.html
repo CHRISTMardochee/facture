@@ -1,0 +1,66 @@
+<div>
+    <h2 data-translate="hospitalApp.facturier.home.title">Facturiers</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="facturier-my-suffix.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="hospitalApp.facturier.home.createLabel">
+                        Create new Facturier
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="hospitalApp.facturier.name">Name</span></th>
+                    <th><span data-translate="hospitalApp.facturier.firstname">Firstname</span></th>
+                    <th><span data-translate="hospitalApp.facturier.streetAddress">Street Address</span></th>
+                    <th><span data-translate="hospitalApp.facturier.postalCode">Postal Code</span></th>
+                    <th><span data-translate="hospitalApp.facturier.city">City</span></th>
+                    <th><span data-translate="hospitalApp.facturier.stateProvince">State Province</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="facturier in vm.facturiers track by facturier.id">
+                    <td><a ui-sref="facturier-my-suffix-detail({id:facturier.id})">{{facturier.id}}</a></td>
+                    <td>{{facturier.name}}</td>
+                    <td>{{facturier.firstname}}</td>
+                    <td>{{facturier.streetAddress}}</td>
+                    <td>{{facturier.postalCode}}</td>
+                    <td>{{facturier.city}}</td>
+                    <td>{{facturier.stateProvince}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="facturier-my-suffix-detail({id:facturier.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="facturier-my-suffix.edit({id:facturier.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="facturier-my-suffix.delete({id:facturier.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

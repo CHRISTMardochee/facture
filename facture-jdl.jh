@@ -1,0 +1,38 @@
+
+
+
+entity Facturier {
+	name String
+    firstname String
+    streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+  
+}
+
+entity Facture {
+	numero String
+    type String
+    date LocalDate
+    montant Long
+    regler  Regle
+}
+
+// an ignored comment
+/** not an ignored comment */
+enum Regle {
+    OUI, NON
+}
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Facturier{name} to Facture
+}
+
+// Set pagination options
+
+
+// Set service options to all except few
+
+// Set an angular suffix
+angularSuffix * with mySuffix

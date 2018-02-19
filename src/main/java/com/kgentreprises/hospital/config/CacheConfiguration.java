@@ -43,6 +43,9 @@ public class CacheConfiguration {
             cm.createCache(com.kgentreprises.hospital.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.kgentreprises.hospital.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.kgentreprises.hospital.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.kgentreprises.hospital.domain.Facturier.class.getName(), jcacheConfiguration);
+            cm.createCache(com.kgentreprises.hospital.domain.Facturier.class.getName() + ".names", jcacheConfiguration);
+            cm.createCache(com.kgentreprises.hospital.domain.Facture.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

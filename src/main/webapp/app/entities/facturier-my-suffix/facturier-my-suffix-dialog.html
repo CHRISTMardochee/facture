@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myFacturierLabel" data-translate="hospitalApp.facturier.home.createOrEditLabel">Create or edit a Facturier</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.facturier.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.facturier.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.facturier.name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.firstname" for="field_firstname">Firstname</label>
+            <input type="text" class="form-control" name="firstname" id="field_firstname"
+                    ng-model="vm.facturier.firstname"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.streetAddress" for="field_streetAddress">Street Address</label>
+            <input type="text" class="form-control" name="streetAddress" id="field_streetAddress"
+                    ng-model="vm.facturier.streetAddress"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.postalCode" for="field_postalCode">Postal Code</label>
+            <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                    ng-model="vm.facturier.postalCode"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.facturier.city"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="hospitalApp.facturier.stateProvince" for="field_stateProvince">State Province</label>
+            <input type="text" class="form-control" name="stateProvince" id="field_stateProvince"
+                    ng-model="vm.facturier.stateProvince"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

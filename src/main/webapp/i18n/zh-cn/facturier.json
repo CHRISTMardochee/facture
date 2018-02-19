@@ -1,0 +1,28 @@
+
+{
+    "hospitalApp": {
+        "facturier" : {
+            "home": {
+                "title": "Facturiers",
+                "createLabel": "创建新 Facturier",
+                "createOrEditLabel": "创建或编辑 Facturier"
+            },
+            "created": "Facturier {{ param }} 创建成功",
+            "updated": "Facturier {{ param }} 更新成功",
+            "deleted": "Facturier {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Facturier {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Facturier"
+            },
+            "name": "Name",
+            "firstname": "Firstname",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "city": "City",
+            "stateProvince": "State Province",
+            "name": "Name"
+        }
+    }
+}

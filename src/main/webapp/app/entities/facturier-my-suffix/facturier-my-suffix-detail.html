@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="hospitalApp.facturier.detail.title">Facturier</span> {{vm.facturier.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="hospitalApp.facturier.name">Name</span></dt>
+        <dd>
+            <span>{{vm.facturier.name}}</span>
+        </dd>
+        <dt><span data-translate="hospitalApp.facturier.firstname">Firstname</span></dt>
+        <dd>
+            <span>{{vm.facturier.firstname}}</span>
+        </dd>
+        <dt><span data-translate="hospitalApp.facturier.streetAddress">Street Address</span></dt>
+        <dd>
+            <span>{{vm.facturier.streetAddress}}</span>
+        </dd>
+        <dt><span data-translate="hospitalApp.facturier.postalCode">Postal Code</span></dt>
+        <dd>
+            <span>{{vm.facturier.postalCode}}</span>
+        </dd>
+        <dt><span data-translate="hospitalApp.facturier.city">City</span></dt>
+        <dd>
+            <span>{{vm.facturier.city}}</span>
+        </dd>
+        <dt><span data-translate="hospitalApp.facturier.stateProvince">State Province</span></dt>
+        <dd>
+            <span>{{vm.facturier.stateProvince}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="facturier-my-suffix-detail.edit({id:vm.facturier.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,27 @@
+
+{
+    "hospitalApp": {
+        "facture" : {
+            "home": {
+                "title": "Factures",
+                "createLabel": "Создать новый Facture",
+                "createOrEditLabel": "Создать или отредактировать Facture"
+            },
+            "created": "Новый Facture создан с идентификатором {{ param }}",
+            "updated": "Facture обновлен с идентификатором {{ param }}",
+            "deleted": "Facture удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Facture {{ id }}?"
+            },
+            "detail": {
+                "title": "Facture"
+            },
+            "numero": "Numero",
+            "type": "Type",
+            "date": "Date",
+            "montant": "Montant",
+            "regler": "Regler",
+            "facturier": "Facturier"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+{
+    "hospitalApp": {
+        "facturier" : {
+            "home": {
+                "title": "Facturiers",
+                "createLabel": "नया Facturier बनाएँ",
+                "createOrEditLabel": "Facturier बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Facturier [identifier: {{ param }}] तैयार है",
+            "updated": "एक Facturier [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Facturier [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Facturier [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Facturier"
+            },
+            "name": "Name",
+            "firstname": "Firstname",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "city": "City",
+            "stateProvince": "State Province",
+            "name": "Name"
+        }
+    }
+}

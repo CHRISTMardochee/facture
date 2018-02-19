@@ -1,0 +1,28 @@
+
+{
+    "hospitalApp": {
+        "facturier" : {
+            "home": {
+                "title": "Facturiers",
+                "createLabel": "Создать новый Facturier",
+                "createOrEditLabel": "Создать или отредактировать Facturier"
+            },
+            "created": "Новый Facturier создан с идентификатором {{ param }}",
+            "updated": "Facturier обновлен с идентификатором {{ param }}",
+            "deleted": "Facturier удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Facturier {{ id }}?"
+            },
+            "detail": {
+                "title": "Facturier"
+            },
+            "name": "Name",
+            "firstname": "Firstname",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "city": "City",
+            "stateProvince": "State Province",
+            "name": "Name"
+        }
+    }
+}

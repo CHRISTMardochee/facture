@@ -1,0 +1,28 @@
+
+{
+    "hospitalApp": {
+        "facturier" : {
+            "home": {
+                "title": "Facturiers",
+                "createLabel": "Maak een nieuwe Facturier",
+                "createOrEditLabel": "Maak of wijzig een Facturier"
+            },
+            "created": "A new Facturier is created with identifier {{ param }}",
+            "updated": "A Facturier is updated with identifier {{ param }}",
+            "deleted": "A Facturier is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Facturier {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Facturier"
+            },
+            "name": "Name",
+            "firstname": "Firstname",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "city": "City",
+            "stateProvince": "State Province",
+            "name": "Name"
+        }
+    }
+}

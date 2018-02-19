@@ -1,0 +1,27 @@
+
+{
+    "hospitalApp": {
+        "facture" : {
+            "home": {
+                "title": "Factures",
+                "createLabel": "नया Facture बनाएँ",
+                "createOrEditLabel": "Facture बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Facture [identifier: {{ param }}] तैयार है",
+            "updated": "एक Facture [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Facture [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Facture [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Facture"
+            },
+            "numero": "Numero",
+            "type": "Type",
+            "date": "Date",
+            "montant": "Montant",
+            "regler": "Regler",
+            "facturier": "Facturier"
+        }
+    }
+}

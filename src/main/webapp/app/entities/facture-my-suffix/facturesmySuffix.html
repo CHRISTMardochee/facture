@@ -1,0 +1,68 @@
+<div>
+    <h2 data-translate="hospitalApp.facture.home.title">Factures</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="facture-my-suffix.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="hospitalApp.facture.home.createLabel">
+                        Create new Facture
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="hospitalApp.facture.numero">Numero</span></th>
+                    <th><span data-translate="hospitalApp.facture.type">Type</span></th>
+                    <th><span data-translate="hospitalApp.facture.date">Date</span></th>
+                    <th><span data-translate="hospitalApp.facture.montant">Montant</span></th>
+                    <th><span data-translate="hospitalApp.facture.regler">Regler</span></th>
+                    <th><span data-translate="hospitalApp.facture.facturier">Facturier</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="facture in vm.factures track by facture.id">
+                    <td><a ui-sref="facture-my-suffix-detail({id:facture.id})">{{facture.id}}</a></td>
+                    <td>{{facture.numero}}</td>
+                    <td>{{facture.type}}</td>
+                        <td>{{facture.date | date:'mediumDate'}}</td>
+                    <td>{{facture.montant}}</td>
+                    <td data-translate="{{'hospitalApp.Regle.' + facture.regler}}">{{facture.regler}}</td>
+                    <td>
+                        <a ui-sref="facturier-my-suffix-detail({id:facture.facturier.id})">{{facture.facturier.id}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="facture-my-suffix-detail({id:facture.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="facture-my-suffix.edit({id:facture.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="facture-my-suffix.delete({id:facture.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
